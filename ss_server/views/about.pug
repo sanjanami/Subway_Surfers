@@ -1,0 +1,50 @@
+extends layout
+
+block content
+  br
+  br
+  br
+  br
+  br
+  .container
+    h1 WATCH THE OFFICIAL TRAILER OF
+    h2 SUBWAY SURFERS
+    .card
+      a(href="https://www.youtube.com/watch?v=fGy-x3H-nxU") 
+        .card-body
+          p.card-title Have you got what it takes to help Jake and his friends escape the grumpy guard? Tour the world and avoid oncoming trains in one of the most exciting endless runner games of all time!
+    style.
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        font-family:Garamond, serif;
+        font-size: 40px;
+        color:#03256C;
+      }
+      .card {
+          background-color:#1768AC;
+          padding: 2rem;
+          margin: 10px;
+          border-radius: 10px;
+          max-height: 680px;
+          display: inline-block;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 10px;
+          width:1000px;
+          }
+      .card:hover {
+            transform: scale(0.95);
+            background-color: #03256C ;
+            border:#1768AC ;
+          }
+      a{
+        font-family: Garamond, serif;
+        font-size: 16px; /* Adjust the font size to your preference */
+        color:white ;
+        text-align: center; 
+      }
+
+          

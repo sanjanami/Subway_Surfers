@@ -1,0 +1,149 @@
+extends layout
+
+block content
+    .container
+      .centered-content
+      br
+      br
+      br
+      br
+      br
+      h1.text-center SUBWAY SURFERS-GAMING WEBSITE
+      p.text-justify Subway Surfers (Danish: Undergrunds surfere) is an endless runner mobile game which is co-developed by Kiloo and SYBO Games, private companies based in Denmark. In the game, players take the role of young graffiti artists who, upon being caught in the act of "tagging" a metro railway site, run through the railroad tracks to escape from the inspector and his dog. As they run, they grab gold coins, power-ups, and many other items along the way while simultaneously dodging collisions with trains and other objects. They can also jump on top of the trains and surf with hoverboards to evade capture until the character crashes into an obstacle, gets caught by the inspector, or gets hit by a train, at which point the game ends. Special events, such as the Season Hunt and other, can result in in-game rewards and characters.
+      .card
+        a(href="/new_seasons") 
+          .card-body
+            h5.card-title NEW SEASONS
+      .buttons.centered-buttons
+        div.col
+          a(href="https://instagram.com/subwaysurfers?igshid=MzRlODBiNWFlZA==/")
+            button.instagram
+              span
+                i(class="fab fa-instagram")
+              | Instagram
+          a(href="https://www.youtube.com/@subwaysurfers/")
+            button.youtube
+              span 
+                i(class="fab fa-youtube")
+              | YouTube
+    style.
+        .card img.card-img-top {
+          border-radius: 100px;
+          display: block;
+          margin: auto;
+        }
+        .card-img-top {
+          height: 500px;
+          width: 150px;
+        }
+        .card {
+          background-color:#1768AC;
+          padding: 2rem;
+          margin: 10px;
+          border-radius: 10px;
+          max-height: 680px;
+          display: inline-block;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 10px;
+          width:1000px;
+          }
+        .card:hover {
+            transform: scale(0.95);
+            background-color: #03256C ;
+            border:#1768AC ;
+          }
+        a{
+          font-family: Garamond, serif;
+          font-size: 20px; /* Adjust the font size to your preference */
+          color:white ;
+          text-align: center; 
+        }
+        .buttons{
+          display: flex;
+          width: 500px;
+          height: 300px;
+          align-items: center;
+          flex-direction: column; /* To stack buttons vertically */
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+        }
+        .centered-buttons {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column; /* To stack buttons vertically */
+          justify-content: center;
+          height: 100vh;
+        }
+        .buttons .col{
+          display: inline-block;
+          margin-left: 0;
+        }
+        .buttons .col button{
+          position: relative;
+          display: block;
+          height: 55px;
+          width: 150px;
+          margin: 40px 0;
+          color: #fff;
+          font-size: 20px;
+          font-weight: 500;
+          text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+          cursor: pointer;
+          border: none;
+          outline: none;
+          border-radius: 0 5px 5px 0;
+          transition: all 0s ease-out;
+        }
+      .col button:active{
+        top: 3px;
+      }
+      .col button.instagram,
+      .col button.instagram span{
+        background: #e1306c;
+        border-left: 1px solid #c91d56;
+        box-shadow: 0px 5px 0px 0px #c91d56;
+      }
+      .col button.instagram:active{
+        box-shadow: 0px 2px 0px 0px #c91d56;
+      }
+      .col button.youtube,
+      .col button.youtube span{
+        background: #DE463B;
+        border-left: 1px solid #C02B21;
+        box-shadow: 0px 5px 0px 0px #C02B21;
+      }
+      .col button.youtube:active{
+        box-shadow: 0px 2px 0px 0px #C02B21;
+      }
+      .col button span{
+        position: absolute;
+        height: 55px;
+        width: 60px;
+        top: 0;
+        left: -60px;
+        line-height: 55px;
+        font-size: 25px;
+        display: block;
+        font-weight: normal;
+        border-radius: 5px 0 0 5px;
+      }
+      .col button:active span{
+        top: -3px;
+      }
+      .col button.instagram span{
+        border-right: 1px solid #c91d56;
+      }
+      .col button.youtube span{
+        border-right: 1px solid #C02B21;
+      }
+      .col button.instagram:active span{
+        box-shadow: 0px 5px 0px 0px #c91d56,
+                    6px 4px 2px rgba(0,0,0,0.3);
+      }
+      .col button.youtube:active span{
+        box-shadow: 0px 5px 0px 0px #C02B21,
+                    6px 4px 2px rgba(0,0,0,0.3);
+      }
