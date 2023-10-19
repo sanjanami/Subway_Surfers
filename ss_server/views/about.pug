@@ -7,8 +7,26 @@ block content
   br
   br
   .container
-    h1 WATCH THE OFFICIAL TRAILER OF
-    h2 SUBWAY SURFERS
+    h1.text-center How to play?
+        ul 
+          li 
+            Swipe Up to jump. This lets you jump over obstacles and collect coins in the air. You can't jump high enough to get on the top of a train unless you have the Super Sneakers powerup.
+          li 
+            Swipe down to roll.You'll need to roll to get under low obstacles.
+          li
+            Swipe left and right to switch lanes. Switch lanes to avoid trains, walls, and other obstacles.
+          li
+            Double-tap the screen to activate your hoverboard. Your hoverboard allows you to collect more coins and will protect you from a crash.
+          li
+            Collect coins to purchase hoverboards and upgrades. Coins are scattered throughout the levels, and you'll need to move quickly to collect as many as possible.
+          li
+            Collect glowing powerups for boosts. There are four different powerups that you'll come across while playing:
+            Jetpack - Makes you fly above the train track and lets you grab additional coins.
+            Super Sneakers - Makes you jump higher.
+            Coin Magnet - You'll attract any nearby coins without having to touch them.
+            2x Multiplier - Doubles your current score multiplier (e.g. x3 now becomes x6).      
+    h1 Watch The Official Trailer Of
+    h2 Subway Surfers
     .card
       a(href="https://www.youtube.com/watch?v=fGy-x3H-nxU") 
         .card-body
@@ -16,10 +34,13 @@ block content
     style.
       h1 {
         text-align: center;
+        font-family: 'Brush Script MT', cursive;
+        font-size: 60px;
+        color:#FFC72C;
       }
       h2 {
         text-align: center;
-        font-family:Garamond, serif;
+        font-family: 'Brush Script MT', cursive;
         font-size: 40px;
         color:#03256C;
       }
@@ -41,10 +62,24 @@ block content
             border:#1768AC ;
           }
       a{
-        font-family: Garamond, serif;
+        font-family: 'Brush Script MT', cursive;
         font-size: 16px; /* Adjust the font size to your preference */
         color:white ;
         text-align: center; 
+      }
+      ul {
+        list-style-type: disc; /* Change the list style type to a bullet (disc) */
+        margin-left: 30px;
+        font-family: Copperplate, Papyrus, fantasy;
+        font-size: 30px; /* Add some left margin for indentation */
+      }
+      li {
+        margin-bottom: 10px;
+        font-family: Copperplate, Papyrus, fantasy;
+        font-size: 30px; /* Add spacing between list items */
+      }
+      li.text-center {
+      text-align: center; /* Center-align the text within these list items */
       }
 
           

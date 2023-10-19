@@ -1,15 +1,156 @@
 extends layout
 
 block content
-  br
-  br
-  br
-  br
-  br
-  div.text-center 
-    iframe#gameframe(
-      src="https://5dd312fa-015f-11ea-ad56-9cb6d0d995f7.poki-gdn.com/0e0ff019-bad9-4472-8d1e-47eda2be21f1/poki-savegame-import.html?previous=https%3A%2F%2F5dd312fa-015f-11ea-ad56-9cb6d0d995f7.poki-gdn.com%2Fba00168a-b3e2-4f2c-b0e3-7004b6a47869&unity-only&next=https%3A%2F%2F5dd312fa-015f-11ea-ad56-9cb6d0d995f7.poki-gdn.com%2F0e0ff019-bad9-4472-8d1e-47eda2be21f1%2Findex.html%3Fcountry%3DIN%26ccpaApplies%3D0%26url_referrer%3Dhttps%253A%252F%252Fpoki.com%252F&tag=pg-v3.135.0&site_id=3&iso_lang=en&poki_url=https%253A%252F%252Fpoki.com%252Fen%252Fg%252Fsubway-surfers&gdhoist=yes&nonPersonalized=n&familyFriendly=n&categories=3%2C4%2C6%2C9%2C86%2C88%2C93%2C96%2C103%2C903%2C929%2C1103%2C1126%2C1137%2C1140%2C1143%2C1147%2C1156%2C1159%2C1160%2C1163%2C1179%2C1185&experiment=control-9c9a18bd&special_condition=landing&game_id=5dd312fa-015f-11ea-ad56-9cb6d0d995f7&game_version_id=0e0ff019-bad9-4472-8d1e-47eda2be21f1"
-      allow="autoplay; camera; focus-without-user-activation *; monetization; gamepad; keyboard-map *; xr-spatial-tracking; clipboard-write; web-share"
-      scrolling="no"
-      style="width:1000px; height: 500px;"
-    )
+    .container
+      .centered-content
+      br
+      br
+      br
+      br
+      br
+      h1.text-center Subway Surfers
+      .card
+        a(href="/new_seasons") 
+          .card-body
+            h5.card-title New Seasons
+      p.text-justify Subway Surfers (Danish: Undergrunds surfere) is an endless runner mobile game which is co-developed by Kiloo and SYBO Games, private companies based in Denmark. In the game, players take the role of young graffiti artists who, upon being caught in the act of "tagging" a metro railway site, run through the railroad tracks to escape from the inspector and his dog. 
+      .buttons.centered-buttons
+        div.col
+          a(href="https://instagram.com/subwaysurfers?igshid=MzRlODBiNWFlZA==/")
+            button.instagram
+              span
+                i(class="fab fa-instagram")
+              | Instagram
+          a(href="https://www.youtube.com/@subwaysurfers/")
+            button.youtube
+              span 
+                i(class="fab fa-youtube")
+              | YouTube
+    style.
+        .card img.card-img-top {
+          border-radius: 100px;
+          display: block;
+          margin: auto;
+        }
+        .card-img-top {
+          height: 500px;
+          width: 150px;
+        }
+        .card {
+          background-color:#1768AC;
+          padding: 2rem;
+          margin: 10px;
+          border-radius: 10px;
+          max-height: 680px;
+          display: inline-block;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 10px;
+          width:1000px;
+          }
+        .card:hover {
+            transform: scale(0.95);
+            background-color: #03256C ;
+            border:#1768AC ;
+          }
+        a{
+          font-family: 'Brush Script MT', cursive;
+          font-size: 20px; /* Adjust the font size to your preference */
+          color:white ;
+          text-align: center; 
+        }
+        .buttons{
+          display: flex;
+          width: 500px;
+          height: 300px;
+          align-items: center;
+          flex-direction: column; /* To stack buttons vertically */
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+        }
+        .centered-buttons {
+          flex-direction: column; /* To stack buttons vertically */
+          justify-content: center;
+          height: 200vh;
+        }
+        .buttons .col{
+          display: block;
+          margin-left: 0;
+        }
+        .buttons .col button{
+          position: relative;
+          display: block;
+          height: 55px;
+          width: 150px;
+          margin: 40px 0;
+          color: #fff;
+          font-size: 20px;
+          font-weight: 500;
+          text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+          cursor: pointer;
+          border: none;
+          outline: none;
+          border-radius: 0 5px 5px 0;
+          transition: all 0s ease-out;
+        }
+      .col button:active{
+        top: 3px;
+      }
+      .col button.instagram,
+      .col button.instagram span{
+        background: #e1306c;
+        border-left: 1px solid #c91d56;
+        box-shadow: 0px 5px 0px 0px #c91d56;
+      }
+      .col button.instagram:active{
+        box-shadow: 0px 2px 0px 0px #c91d56;
+      }
+      .col button.youtube,
+      .col button.youtube span{
+        background: #DE463B;
+        border-left: 1px solid #C02B21;
+        box-shadow: 0px 5px 0px 0px #C02B21;
+      }
+      .col button.youtube:active{
+        box-shadow: 0px 2px 0px 0px #C02B21;
+      }
+      .col button span{
+        position: absolute;
+        height: 55px;
+        width: 60px;
+        top: 0;
+        left: -60px;
+        line-height: 55px;
+        font-size: 25px;
+        display: block;
+        font-weight: normal;
+        border-radius: 5px 0 0 5px;
+      }
+      .col button:active span{
+        top: -3px;
+      }
+      .col button.instagram span{
+        border-right: 1px solid #c91d56;
+      }
+      .col button.youtube span{
+        border-right: 1px solid #C02B21;
+      }
+      .col button.instagram:active span{
+        box-shadow: 0px 5px 0px 0px #c91d56,
+                    6px 4px 2px rgba(0,0,0,0.3);
+      }
+      .col button.youtube:active span{
+        box-shadow: 0px 5px 0px 0px #C02B21,
+                    6px 4px 2px rgba(0,0,0,0.3);
+      }
+      h1 {
+        font-family: 'Brush Script MT', cursive;
+        color:#FFC72C; /* Your desired text color */
+        font-size: 50px;
+      }
+      P {
+        font-family: 'Brush Script MT', cursive;
+        color:#03256C; /* Your desired text color */
+        font-size: 30px;
+      }
